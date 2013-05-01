@@ -18,8 +18,9 @@ function interceptSubmit() {
                 success: function(data){
                     console.log(data);
                     // Display messages
-                    $('p.instructions').html('Hello there @' + data.username + '!');   
-                    $('p.output').html('Number of checkins: ' + data.checkIns)
+                    $('.instructions').html('Hello there @' + data.username + '!');   
+                    $('.output').html('Number of checkins: ' + data.checkIns);
+                    $('form').hide();
                     // navigator.geolocation.clearWatch(watchUser);
                 }
             });
