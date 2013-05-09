@@ -9,7 +9,7 @@ function interceptSubmit() {
 
         var username = $('input:first').val();
            $.ajax({
-                url: 'http://form.decoded.co:3000/09-05-13',
+                url: 'http://form.decoded.co:3000/',
                 data: {username: username},
                 method: 'POST',
                 dataType: 'jsonp',
@@ -21,7 +21,9 @@ function interceptSubmit() {
                     $('.instructions').html('Hello there @' + data.username + '!');   
                     $('.output').html('Number of checkins: ' + data.checkIns);
                     $('form').hide();
-                    // navigator.geolocation.clearWatch(watchUser);
+                    if (watchUser) {
+                        navigator.geolocation.clearWatch(watchUser);
+                    }
                 }
             });
         return false;
