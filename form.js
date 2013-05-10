@@ -18,8 +18,7 @@ function interceptSubmit() {
                 success: function(data){
                     console.log(data);
                     // Display messages
-                    $('.instructions').html('Hello there @' + data.username + '!');   
-                    $('.output').html('Number of checkins: ' + data.checkIns);
+                    $('.message').html('Hello there @' + data.username + '! Number of checkins: ' + data.checkIns);   
                     $('form').hide();
                     if (watchUser) {
                         navigator.geolocation.clearWatch(watchUser);
