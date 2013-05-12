@@ -20,9 +20,7 @@ function interceptSubmit() {
                     // Display messages
                     $('.message').html('Hello there @' + data.username + '! Number of checkins: ' + data.checkIns);   
                     $('form').hide();
-                    if (watchUser) {
-                        navigator.geolocation.clearWatch(watchUser);
-                    }
+                    if (typeof watchUser != 'undefined') navigator.geolocation.clearWatch(watchUser);
                 }
             });
         return false;
