@@ -1,8 +1,10 @@
 // Stop AJAX caching 
 $.ajaxSetup({ cache:false });
 
+// Wait for the page to load
 $(document).ready(interceptSubmit);
 
+// Main function: process form input via AJAX
 function interceptSubmit() {
     // 1 When someone clicks on the button...
     $("form").submit(function() {

@@ -1,3 +1,4 @@
+// Wait for the HTML to load
 $(document).ready(getStarted);
 
 function getStarted(){	

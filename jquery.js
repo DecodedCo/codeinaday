@@ -1,3 +1,5 @@
+/* Un-minified version of jQuery: takes longer to load, but allows you to look under the hood! */
+
 /*!
  * jQuery JavaScript Library v1.9.1
  * http://jquery.com/
