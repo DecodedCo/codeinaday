@@ -1,5 +1,5 @@
-ciad-2
-======
+Code in a Day Boilerplate
+=========================
 
 This boilerplate helps attendees get started with their Code in a Day app. It includes
 
