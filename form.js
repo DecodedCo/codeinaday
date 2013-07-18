@@ -11,7 +11,7 @@ function interceptSubmit() {
 
         var username = $('input:first').val();
            $.ajax({
-                url: 'http://api.decoded.co:3000/',
+                url: 'http://api.decoded.co/checkin',
                 data: {username: username},
                 method: 'POST',
                 dataType: 'jsonp',
