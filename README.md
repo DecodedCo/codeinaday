@@ -25,14 +25,6 @@ JavaScript file that processes a form input, and submits the result to a databas
 
 Un-minified version of jQuery: takes longer to load, but allows you to look under the hood!
 
-#### latlon.js
-
-Code snippet for calculating the distance between two pairs of lat/lon co-ordinates. Simply include the file, and call this function: 
-
-	getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2);
-
-Code originally found here: <http://stackoverflow.com/questions/27928/how-do-i-calculate-distance-between-two-latitude-longitude-points>
-
 #### tracker.js
 
 Starter file for writing code that tracks the user's position using the HTML5 geolocation API.
