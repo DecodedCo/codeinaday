@@ -8,7 +8,7 @@ function getStarted() {
 
 
   // track the user's location
-  watchUser = navigator.geolocation.watchPosition(calculateDistance);
+  watchUser = navigator.geolocation.watchPosition(calculateDistance);
 
 } // END getStarted
 
