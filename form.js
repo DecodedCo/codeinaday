@@ -1,7 +1,7 @@
 // Stop AJAX caching 
-$.ajaxSetup({ cache:false });
+jQuery.ajaxSetup({ cache:false });
 
-// Wait for the page to load
+// Wait for the page to load - $ is a shortcut for jQuery
 $(document).ready(interceptSubmit);
 
 // Main function: process form input via AJAX
