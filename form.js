@@ -22,7 +22,3 @@ $("form").submit(function() {
     return false;
 });
 
-// Stop AJAX caching 
-jQuery.ajaxSetup({ cache:false });
-
-
