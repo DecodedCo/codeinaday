@@ -1,10 +1,7 @@
-// Wait for the HTML to load
-$(document).ready(getStarted);
+function main() {
 
-// Do this when it's loaded
-function getStarted() {	
+  console.log("Tracking code start");
 
+}
 
-
-
-} // END getStarted
+main();
