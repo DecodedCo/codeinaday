@@ -25,6 +25,6 @@ function interceptSubmit() {
         }); // END ajax
         
         // 10. Allow form to submit without reloading the page
-        return false;
+        event.preventDefault();
     }) // END submit
 } // END interceptSubmit
