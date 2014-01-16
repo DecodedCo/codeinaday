@@ -7,7 +7,7 @@ This boilerplate helps attendees get started with their Code in a Day app. It in
 
 #### form.js
 
-JavaScript file that processes a form input, and submits the result to a database without refreshing the page (uses jQuery's AJAX helper function)
+JavaScript file that processes a form input, and submits the result to a database without refreshing the page (uses jQuery's AJAX helper function) 
 
 #### apple-touch-icon.png
 
