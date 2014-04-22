@@ -39,13 +39,13 @@ By default, a data store consists of all the names with the number of checkins.
 
 To create a new checkin, make an HTTP request to the same URL but append a "username" parameter:
 
-`http://api.decoded.co/checking/dd-mm-yy/app-name?username=stephenfry`
+`http://api.decoded.co/checking/dd-mm-yy/app-name?username=justinbieber`
 
 If the "username" does not currently appear in the data store, then it is added with the number of checkins set to one (1).  Each subsequent HTTP request will increment the number of checkins for that user by one.  The URL will then return a JavaScript object of the result:
 
 `{
-  user: "MarthaStewart‎",
-  checkins: 7
+  user: "justinbieber",
+  checkins: 40000
 }`
 
 ## How it works
