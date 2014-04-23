@@ -1,6 +1,6 @@
-// 1. When someone submits the form ($ is a shortcut for jQuery):
+// 1. When someone submits the form:
 jQuery("form").submit(function() {
-    // 2. Perform an AJAX request:
+    // 2. Perform an AJAX request ($ is a shortcut for jQuery):
     $.ajax({
         // 3. Where to send data: use the URL from the form's action attribute
         url: $('form').attr('action'),
