@@ -15,10 +15,6 @@ Some simple code snippets to help mobile optimise a web app. Place within your H
 
 JavaScript file that processes a form input, and submits the result to the Decoded Checkin API without refreshing the page (uses jQuery's AJAX helper function)
 
-#### tracker.js
-
-Starter file for writing code that tracks the user's position using the HTML5 geolocation API.
-
 # API Documentation
 
 ## What it does
