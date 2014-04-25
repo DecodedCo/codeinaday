@@ -3,17 +3,17 @@ Code in a Day Boilerplate
 
 This boilerplate helps attendees get started with their Code in a Day app. It includes
 
-## HTML
-
-#### head-helper.html
-
-Some simple code snippets to help mobile optimise a web app. Place within your HTML &lt;head&gt;
-
 ## JavaScript
 
 #### form.js
 
 JavaScript file that processes a form input, and submits the result to the Decoded Checkin API without refreshing the page (uses jQuery's AJAX helper function)
+
+## Images
+
+#### apple-touch-icon.png
+
+An icon for the homescreen of your users' mobile devices
 
 # API Documentation
 
