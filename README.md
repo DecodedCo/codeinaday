@@ -23,33 +23,45 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 
 ## How to use it
 
+
+
+CREATING A NEW DATA STORE 
+
 The API is exposed via a URL: `http://api.decoded.co/checkin/`
 
-To create a new data store using the API, add a unique string of text to the URL:
+To create a new data store using the API, add a unique string of text to the URL - for example a date:
 
-`http://api.decoded.co/checkin/dd-mm-yy/app-name`
-
-In the above example we are using the date and a separate app name to create a new data store.
+`http://api.decoded.co/checkin/dd-mm-yy/`
 
 By default, a data store consists of all the names with the number of checkins.
 
+
+
+STORING A CHECKIN
+
 To create a new checkin, make an HTTP request to the same URL but append a "username" parameter:
 
-`http://api.decoded.co/checkin/dd-mm-yy/app-name?username=justinbieber`
+`http://api.decoded.co/checkin/dd-mm-yy/app-name?username=stephenfry`
 
 If the "username" does not currently appear in the data store, then it is added with the number of checkins set to one (1).  Each subsequent HTTP request will increment the number of checkins for that user by one.  The URL will then return a JavaScript object of the result:
 
 `{
-  user: "justinbieber",
-  checkins: 40000
+  user: "stephenfry",
+  checkins: 10
 }`
+
+
+CREATING A CHECKIN INPUT
+
+Create an HTML form input with the name username and define the form action as the API URL.
+
 
 ## How it works
 
 The API has been implemented using JavaScript/Node.js to run a server on the Raspberry PI.  Each data store file consists of a list of usernames and corresponding number of checkins, stored in "JSON" (JavaScript Object Notation) format eg
 
 `{
-  "justinbieber": 40000,
+  "stephenfry": 10,
   "jimmyfallon": 16,
   "MarthaStewart‎": 7
 }`
