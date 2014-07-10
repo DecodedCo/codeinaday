@@ -29,7 +29,8 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 
   1. The API is exposed via a URL: `http://api.decoded.co/checkin/`
 
-  2. To create a new data store, add a unique string of text to the URL: `http://api.decoded.co/checkin/new-store/`
+  2. To create a new data store, add a unique string of text to the URL: 
+  `http://api.decoded.co/checkin/new-store/`
 
 **2. STORING A CHECKIN**
 
