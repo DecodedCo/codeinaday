@@ -27,7 +27,9 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 
 **CREATE A NEW DATA STORE**
 
-  1. The API is exposed via a URL: `http://api.decoded.co/checkin/`
+  1. The API is exposed via a URL: 
+
+  `http://api.decoded.co/checkin/`
 
   2. To create a new data store, add a unique string of text to the URL: 
 
@@ -35,13 +37,16 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 
 **STORING A CHECKIN**
 
-  1. To create a new checkin, make an HTTP request to the same URL, but append a **"username"** parameter: `http://api.decoded.co/checkin/dd-mm-yy/?username=stephenfry` 
+  1. To create a new checkin, make an HTTP request to the same URL, but append a **"username"** parameter: 
+
+  `http://api.decoded.co/checkin/dd-mm-yy/?username=stephenfry` 
 
   2. If the "username" does not currently exist in the "new-store", then it is added with the number of checkins set to one (1).  
 
   3. Each subsequent HTTP request will increment the number of checkins for that user by one.  
 
   4. The URL will then return a JavaScript object of the result: 
+  
   `{
   user: "stephenfry",
   checkins: 1
