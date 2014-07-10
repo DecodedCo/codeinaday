@@ -27,25 +27,20 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 
 **1. CREATE A NEW DATA STORE**
 
-The API is exposed via a URL: `http://api.decoded.co/checkin/`
+  1. The API is exposed via a URL: `http://api.decoded.co/checkin/`
 
-To create a new data store, add a unique string of text to the URL:
-
-`http://api.decoded.co/checkin/new-store/`
+  2. To create a new data store, add a unique string of text to the URL: `http://api.decoded.co/checkin/new-store/`
 
 **2. STORING A CHECKIN**
 
-To create a new checkin, make an HTTP request to the same URL, but append a **"username"** parameter:
+  1. To create a new checkin, make an HTTP request to the same URL, but append a **"username"** parameter: `http://api.decoded.co/checkin/dd-mm-yy/?username=stephenfry`
 
-`http://api.decoded.co/checkin/dd-mm-yy/**?username=stephenfry**`
+  2. If the "username" does not currently exist in the "new-store", then it is added with the number of checkins set to one (1).  
 
-If the "username" does not currently exist in the "new-store", then it is added with the number of checkins set to one (1).  
+  3. Each subsequent HTTP request will increment the number of checkins for that user by one.  
 
-Each subsequent HTTP request will increment the number of checkins for that user by one.  
-
-The URL will then return a JavaScript object of the result:
-
-`{
+  4. The URL will then return a JavaScript object of the result: 
+  `{
   user: "stephenfry",
   checkins: 1
 }`
@@ -53,7 +48,9 @@ The URL will then return a JavaScript object of the result:
 
 **3. CREATING A CHECKIN INPUT**
 
-Create an **HTML form input** with the name **"username"** and define the **form action** as the **new-store** API URL.
+  1. Create an **HTML form** and define the **form action** as the **new-store** API URL.
+
+  2. Create a **text input** inside the form and give it the name **"username"**.
 
 
 ## How it works
