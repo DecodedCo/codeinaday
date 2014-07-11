@@ -65,7 +65,7 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 The API has been implemented using JavaScript/Node.js to run a server on the Raspberry PI.  Each data store file consists of a list of usernames and corresponding number of checkins, stored in "JSON" (JavaScript Object Notation) format eg
 
 `{
-  "stephenfry": 10,
+  "stephenfry": 1,
   "jimmyfallon": 16,
   "MarthaStewart‎": 7
 }`
