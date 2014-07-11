@@ -1,7 +1,7 @@
 Code in a Day Boilerplate
 =========================
 
-This boilerplate helps attendees get started with their Code in a Day app. It includes
+This boilerplate helps attendees get started with their Code in a Day app. It includes the following files.
 
 ## JavaScript
 
@@ -25,35 +25,39 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 
 
 
-CREATING A NEW DATA STORE 
+**CREATE A NEW DATA STORE**
 
-The API is exposed via a URL: `http://api.decoded.co/checkin/`
+  1. The API is exposed via a URL: 
 
-To create a new data store using the API, add a unique string of text to the URL - for example a date:
+  `http://api.decoded.co/checkin/`
 
-`http://api.decoded.co/checkin/dd-mm-yy/`
+  2. To create a new data store, add a unique string of text to the URL: 
 
-By default, a data store consists of all the names with the number of checkins.
+  `http://api.decoded.co/checkin/new-store/`
 
+**STORING A CHECKIN**
 
+  1. To create a new checkin, make an HTTP request to the same URL, but append a **"username"** parameter: 
 
-STORING A CHECKIN
+  `http://api.decoded.co/checkin/dd-mm-yy/?username=stephenfry` 
 
-To create a new checkin, make an HTTP request to the same URL but append a "username" parameter:
+  2. If the "username" does not currently exist in the "new-store", then it is added with the number of checkins set to one (1).  
 
-`http://api.decoded.co/checkin/dd-mm-yy/app-name?username=stephenfry`
+  3. Each subsequent HTTP request will increment the number of checkins for that user by one.  
 
-If the "username" does not currently appear in the data store, then it is added with the number of checkins set to one (1).  Each subsequent HTTP request will increment the number of checkins for that user by one.  The URL will then return a JavaScript object of the result:
-
-`{
+  4. The URL will then return a JavaScript object of the result: 
+  
+  `{
   user: "stephenfry",
-  checkins: 10
+  checkins: 1
 }`
 
 
-CREATING A CHECKIN INPUT
+**CREATING A CHECKIN INPUT**
 
-Create an HTML form input with the name username and define the form action as the API URL.
+  1. Create an **HTML form** and define the **form action** as the **new-store** API URL.
+
+  2. Create a **text input** inside the form and give it the name **"username"**.
 
 
 ## How it works
