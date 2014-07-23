@@ -55,7 +55,7 @@ The Decoded Checkin API makes it possible to store a list of usernames and the n
 
 **CREATING A CHECKIN INPUT**
 
-  1. Create an **HTML form** with a **text input**
+  1. Create an **HTML form** with a **text input**.
 
   2. Give the **text input** the name **"username"**.
 
