@@ -15,4 +15,7 @@ JavaScript file that processes a form input, and submits the result to the Decod
 
 An icon for the homescreen of your users' mobile devices
 
+
+## API Documentation
+
 For the API documentation, please see http://api.decoded.co
