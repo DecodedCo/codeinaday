@@ -14,3 +14,5 @@ JavaScript file that processes a form input, and submits the result to the Decod
 #### apple-touch-icon.png
 
 An icon for the homescreen of your users' mobile devices
+
+For the API documentation, please see http://api.decoded.co
