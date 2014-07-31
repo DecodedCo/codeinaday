@@ -1,9 +1,9 @@
 // 1. When someone submits the form:
-jQuery("form").submit(function() {
+jQuery('form#checkin').submit(function() {
     // 2. Perform an AJAX request ($ is a shortcut for jQuery):
     $.ajax({
         // 3. Where to send data: use the URL from the form's action attribute
-        url: $('form').attr('action'),
+        url: $('form#checkin').attr('action'),
         // 4. What data to send: send the username specified in form input 
         data: { username: $('input').val() },
         // 5. What to do if data submits successfully:
