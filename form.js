@@ -12,12 +12,9 @@ jQuery('form#checkin').submit(function() {
             $('p#message').html('Hello there ' + result.username + '! Number of checkins: ' + result.checkIns);   
             // 7. Hide the form now the user has checked in
             $('form#checkin').hide();
-            // 8. Once they have checked in, stop watching their position
-            if (typeof watchUser != 'undefined') 
-                navigator.geolocation.clearWatch(watchUser);
         } // END success
     }); // END ajax
     
-    // 9. Allow form to submit without reloading the page
+    // 8. Allow form to submit without reloading the page
     event.preventDefault();
 }) // END submit
