@@ -1,4 +1,4 @@
-// 1. When someone submits the form:
+// 1. When someone submits the form with an id 'checkin':
 jQuery('form#checkin').submit(function() {
     // 2. Perform an AJAX request ($ is a shortcut for jQuery):
     $.ajax({
@@ -10,7 +10,7 @@ jQuery('form#checkin').submit(function() {
         success: function(result){
             // 6. Change the paragraph with an id 'message' to display a welcome message
             $('p#message').html('Hello there ' + result.username + '! Number of checkins: ' + result.checkIns);   
-            // 7. Hide the form with an id 'checkin' now the user has checked in
+            // 7. Hide the form now the user has checked in
             $('form#checkin').hide();
             // 8. Once they have checked in, stop watching their position
             if (typeof watchUser != 'undefined') 
