@@ -1,13 +1,16 @@
-// Find the user's location using geolocation
+// Find the users location using geolocation
 navigator.geolocation.watchPosition(successFunction, errorFunction);
 
-// successFunction is run when watchPosition method is successful 
+// successFunction is run when watchPosition is successful 
 function successFunction(position){
 
 	// Test if successFuncton worked in console
-	console.log("Tracking worked!")
+	console.log("Tracking worked!");
+	
+	// Look at object created by watchPosition 
+	console.log(position);
 
-	// Extract user location information from position object 
+	// Store user location information in position object 
 	var userLat = position.coords.latitude;
 	var userLon = position.coords.longitude;
 
