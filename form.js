@@ -4,17 +4,20 @@ jQuery('form#checkin').submit(function() {
     $.ajax({
         // 3. Where to send data: use the URL from the form's action attribute
         url: $('form#checkin').attr('action'),
-        // 4. What data to send: send the username specified in form input 
-        data: { username: $('input').val() },
+        // 4. What data to send: send all inputs from the form
+        data: $('form#checkin').serialize(),
         // 5. What to do if data submits successfully:
         success: function(result){
             // 6. Change the paragraph with an id 'message' to display a welcome message
             $('p#message').html('Hello there ' + result.username + '! Number of checkins: ' + result.checkIns);   
             // 7. Hide the form now the user has checked in
             $('form#checkin').hide();
+            // 8. Once they have checked in, stop watching their position
+            if (typeof watchUser != 'undefined') 
+                navigator.geolocation.clearWatch(watchUser);
         } // END success
     }); // END ajax
     
-    // 8. Allow form to submit without reloading the page
+    // 9. Allow form to submit without reloading the page
     event.preventDefault();
 }) // END submit
