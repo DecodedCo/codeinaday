@@ -1,5 +1,5 @@
 // Find the users location using geolocation
-navigator.geolocation.watchPosition(successFunction, errorFunction);
+watchUser = navigator.geolocation.watchPosition(successFunction, errorFunction);
 
 // successFunction is run when watchPosition is successful 
 function successFunction(position){
