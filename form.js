@@ -4,8 +4,8 @@ jQuery('form#checkin').submit(function() {
     $.ajax({
         // 3. Where to send data: use the URL from the form's action attribute
         url: $('form#checkin').attr('action'),
-        // 4. What data to send: send all inputs from the form
-        data: $('form#checkin').serialize(),
+        // 4. Send the username from the input
+        data: { username: $('input').val() },
         // 5. What to do if data submits successfully:
         success: function(result){
             // 6. Change the paragraph with an id 'message' to display a welcome message
