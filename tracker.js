@@ -1,8 +1,8 @@
 // Find the users location using geolocation
-watchUser = navigator.geolocation.watchPosition(successFunction, errorFunction);
+watchUser = navigator.geolocation.watchPosition(success, error);
 
 // successFunction is run when watchPosition is successful 
-function successFunction(position){
+function success(position){
 
 	// Test if successFuncton worked in console
 	console.log("Tracking worked!");
