@@ -1,3 +1,4 @@
+// Robot Object
 var robot = {
     version: 1000,
     name: "DecodedBot",
@@ -7,4 +8,10 @@ var robot = {
     pickup: function(item) {
         alert("I am picking up the "+item);
     }
+}
+
+// Result Object
+var result = {
+    username,
+    checkIns
 }
