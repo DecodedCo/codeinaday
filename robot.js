@@ -12,6 +12,6 @@ var robot = {
 
 // Result Object
 var result = {
-    username,
-    checkIns
+  username: "" ,
+  checkIns: 0
 }
