@@ -9,9 +9,3 @@ var robot = {
         alert("I am picking up the "+item);
     }
 }
-
-// Result Object
-var result = {
-  username: "" ,
-  checkIns: 0
-}
