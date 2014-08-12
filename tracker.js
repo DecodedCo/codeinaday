@@ -7,7 +7,8 @@ function success(position){
 	// Test if tracking worked in console
 	console.log("Tracking worked!");
 
-	// Look at position object created by watchPosition 
-	console.log(position);
+	// Capture user location coordinates in variables
+	var userLat = position.coords.latitude;
+	var userLon = position.coords.longitude;
 
 } // END success
