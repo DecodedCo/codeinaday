@@ -20,9 +20,9 @@ JavaScript file that processes a form input, and submits the result to the Decod
 
 JavaScript file that creates an object with information about a robot
 
-#### tracker.js
+#### helper.js
 
-Starter code to track a user with Geolocation
+Starter code for user tracking 
 
 
 ## API Documentation
