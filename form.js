@@ -5,7 +5,7 @@ jQuery("form").submit(function() {
         // 3. Where to send data: use the URL from the form's action attribute
         url: $("form").attr("action"),
         // 4. Send the username from the input
-        data: { username: $("input").val() },
+        data: { username: $("input[name=username]").val() },
         // 5. What to do if data submits successfully:
         success: function(result){
             // 6. Change the paragraph with an id 'message' to display a welcome message
