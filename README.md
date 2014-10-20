@@ -3,6 +3,12 @@ Code in a Day Boilerplate
 
 This boilerplate helps attendees get started with their Code in a Day app. It includes the following files.
 
+## HTML
+
+#### index.html
+
+Boilerplate to optimise page for mobile web app experience
+
 ## Images
 
 #### apple-touch-icon.png
@@ -22,7 +28,7 @@ JavaScript file that creates an object with information about a robot
 
 #### helper.js
 
-Starter code for user tracking 
+Starter code for user tracking
 
 
 ## API Documentation
