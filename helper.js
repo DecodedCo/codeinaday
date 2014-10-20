@@ -1,3 +1,7 @@
+// Make sure the user can't check-in initially
+$("form").hide();
+$("p#message").html("Please enable geolocation...");
+
 // Find the users location using geolocation
 watchUser = navigator.geolocation.watchPosition(success);
 
