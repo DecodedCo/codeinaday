@@ -1,12 +1,8 @@
-// Make sure the user can't check-in initially
-$("form").hide();
-$("p#message").html("Please enable geolocation...");
-
 // Find the users location using geolocation
 watchUser = navigator.geolocation.watchPosition(success);
 
 // success is run when watchPosition is successful
-function success(position){
+function success(position,error) {
 
 	// Test if tracking worked in browser console
 	console.log("Tracking was successful!");
