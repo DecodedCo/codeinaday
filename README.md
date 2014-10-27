@@ -5,7 +5,7 @@ This boilerplate helps attendees get started with their Code in a Day app. It in
 
 ## HTML
 
-#### index.html
+#### helper.html
 
 Boilerplate to optimise page for mobile web app experience
 
@@ -25,11 +25,6 @@ JavaScript file that processes a form input, and submits the result to the Decod
 #### robot.js
 
 JavaScript file that creates an object with information about a robot
-
-#### helper.js
-
-Starter code for user tracking
-
 
 ## API Documentation
 
