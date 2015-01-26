@@ -2,7 +2,7 @@
 $("form").hide();
 
 // Change message
-$("p#message").html("Please allow tracking... :)");
+$("p#message").html("Tracking your location now... :)");
 
 // Find the users location using geolocation
 watchUser = navigator.geolocation.watchPosition(success);
