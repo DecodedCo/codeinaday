@@ -1,7 +1,7 @@
 // Hide form to disallow checkin
 $("form").hide();
 
-// Change message
+// Change message to show we're tracking their location
 $("p#message").html("Tracking your location now... :)");
 
 // Find the users location using geolocation
