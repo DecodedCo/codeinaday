@@ -20,9 +20,9 @@ function success(position){
 	var userLat = position.coords.latitude;
 	var userLon = position.coords.longitude;
 
-  // Capture target location coordinate in variables
-  var targetLat = -36.8394755;
-  var targetLon = 174.7656892;
+  	// Capture target location coordinate in variables
+  	var targetLat = -36.8394755;
+  	var targetLon = 174.7656892;
 
 } // END success
 
