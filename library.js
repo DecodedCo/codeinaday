@@ -20,7 +20,7 @@ function allowCheckin() {
     console.log("Allow Check In");
 }
 
-// CALCULATE USER DISTANCE BETWEEN USER AND TARGET
+// CALCULATE THE DISTANCE BETWEEN USER AND TARGET
 // This function requires a target latitude (lat), a target longitude (lon)
 function calculateDistance(lat,lon) {
     // This code checks that tracking was succesful
