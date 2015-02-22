@@ -31,7 +31,7 @@ function calculateDistance(lat,lon) {
     getDistanceFromLatLonInKm(lat,lon,userLat,userLon);
   } else {
     // a. This code creates a loop which runs the function "calculateDistance" again after a short wait
-    setTimeout(function(){calculateDistance(lat,lon)},2000); 
+    setTimeout(function(){calculateDistance(lat,lon)},3000); 
     // b. Confirm function is being run again by sending "Run calculateDistance again" text to the browser console
     console.log("Run calculateDistance again");
   }
@@ -128,7 +128,7 @@ function userCheckinChecker(distance,radius){
     }
   } else {
     // a. This code creates a loop which runs the function "calculateDistance" again after a short wait
-    setTimeout(function(){userCheckinChecker(distance,radius)},2000); 
+    setTimeout(function(){userCheckinChecker(distance,radius)},3000); 
     // b. Confirm function is being run again by sending "Run userCheckinChecker again" text to the browser console
     console.log("Run userCheckinChecker again");
   }
