@@ -72,7 +72,6 @@ function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
     ;
   var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
   distance = R * c; // Distance in km
-  return distance;
   // Confirm function has worked by sending the distance value stored in "distance" to the browser console
   console.log("The user is " +distance+ "km away");
 }
