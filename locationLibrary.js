@@ -129,8 +129,8 @@ function userCheckinChecker(distance,radius){
   } else {
     // a. This code creates a loop which runs the function "calculateDistance" again after a short wait
     setTimeout(function(){canUserCheckin(distance,radius)},2000); 
-    // b. Confirm function is being run again by sending "Running CalculateDistance again" text to the browser console
-    console.log("Running canUserCheckin again");
+    // b. Confirm function is being run again by sending "Run userCheckinChecker again" text to the browser console
+    console.log("Run userCheckinChecker again");
   }
 }
 
