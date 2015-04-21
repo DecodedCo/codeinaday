@@ -11,7 +11,7 @@ jQuery("form").submit(function() {
         // 6. What to do if data submits successfully:
         success: function(result){
             // 7. Change the paragraph with an id 'message' to display a thank you message
-            $("p#message").html("Hello there " + result.id + "! Thanks for your information");
+            $("p#message").html("Thanks for your information");
             // 8. Hide the form now the user has given us information in
             $("form").hide();
         } // END success
