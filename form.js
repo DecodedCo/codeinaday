@@ -3,7 +3,7 @@ var message = "Thank you for registering an interest.";
 function startPage() {
 // 1. When someone submits a form:
 jQuery("form").submit(function() {
-    // 2. Define the id as a random number
+    // 2. Define the id as the current time
     id = new Date().getTime();
     // 3. Perform an AJAX request ($ is a shortcut for jQuery):
     $.ajax({
@@ -29,4 +29,4 @@ jQuery("form").submit(function() {
   jq.src = '//code.jquery.com/jquery-1.11.0.min.js';
   jq.type = 'text/javascript';
   document.getElementsByTagName('head')[0].appendChild(jq);
-    jq.onload = startPage;
+  jq.onload = startPage;
