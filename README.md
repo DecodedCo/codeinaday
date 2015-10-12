@@ -1,4 +1,4 @@
-Philips Boilerplate
+Innovation Boilerplate
 =========================
 
 This boilerplate helps attendees test an assumption with code.
