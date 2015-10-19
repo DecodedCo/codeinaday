@@ -10,15 +10,15 @@ watchUser = navigator.geolocation.watchPosition(success);
 // success is run when watchPosition is successful
 function success(position){
 
-	// Test if tracking worked in browser console
-	console.log("Tracking was successful!");
+  // Test if tracking worked in browser console
+  console.log("Tracking was successful!");
 
-	// View position object in browser console
-	console.log(position);
+  // View position object in browser console
+  console.log(position);
 
-	// Capture user location coordinates in variables
-	var userLat = position.coords.latitude;
-	var userLon = position.coords.longitude;
+  // Capture user location coordinates in variables
+  var userLat = position.coords.latitude;
+  var userLon = position.coords.longitude;
 
   // Where is the target location?
   var targetLat = 0;
