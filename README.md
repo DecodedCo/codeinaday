@@ -9,6 +9,12 @@ This boilerplate helps attendees get started with their Code in a Half Day app. 
 
 Boilerplate to optimise page for mobile web app experience
 
+## CSS
+
+#### media.css
+
+Boilerplate to create @media query
+
 ## JavaScript
 
 #### form.js
