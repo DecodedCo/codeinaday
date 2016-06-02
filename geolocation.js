@@ -22,25 +22,30 @@ function success(position){
   var targetLon = 0;
 
   // Calculate the distance
-
   var distance = calculateDistance(userLat, userLon, targetLat, targetLon);
 
   // Define the radius for checkin
-
-  var radius = 0;
+  var radius = 0; // in miles
 
   // Logic
-
   if (distance < radius) {
-    // allow checkin
+    // show the form
+    
+    // change the message to something welcoming
+    
   } else {
-    // prevent checkin
+    // hide the form
+    
+    // change the message to something encouraging
+    
   }
 
 } // END success
 
 
+//** DO NOT CHANGE ANYTHING BELOW THIS LINE **//
 // From http://www.geodatasource.com/developers/javascript
+// Default unit is miles
 
 function calculateDistance(lat1, lon1, lat2, lon2, unit) {
   var radlat1 = Math.PI * lat1/180
