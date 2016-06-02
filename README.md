@@ -9,12 +9,6 @@ This boilerplate helps attendees get started with their Code in a Half Day app. 
 
 Boilerplate to optimise page for mobile web app experience
 
-## Images
-
-#### apple-touch-icon.png
-
-An icon for the homescreen of your users' mobile devices
-
 ## JavaScript
 
 #### form.js
