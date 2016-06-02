@@ -7,7 +7,7 @@
   
   body{
   
-  } /* end of body */
+  } /* end of @media body */
   
   section{
     width: 50%;
@@ -16,12 +16,12 @@
     background-color: rgba(255, 255, 0, 0.3);
     border-radius: 3px;
     font-size: 1.2em;
-  } /* end of section */
+  } /* end of @media section */
   
   p#message{
     color: blue;
     font-weight: bold;
-  } /* end of p#message */
+  } /* end of @media p#message */
 
 
 } /* end of @media */
