@@ -13,7 +13,7 @@ Boilerplate to optimise page for mobile web app experience
 
 #### media.css
 
-Boilerplate to create @media query
+Boilerplate to create @media query for desktop app experience
 
 ## JavaScript
 
