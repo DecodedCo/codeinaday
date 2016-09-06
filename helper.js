@@ -33,8 +33,12 @@ function success(position){
 
   if (distance < radius) {
     // allow checkin
+    $("form").show();
+    $("p#message").html("Congratulations you made it! Enter your details below:");
   } else {
     // prevent checkin
+    $("form").hide();
+    $("p#message").html("You are currently " + distance.toFixed(1) + " miles away. Keep moving!");
   }
 
 } // END success
