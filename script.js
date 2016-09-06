@@ -1,11 +1,16 @@
-// Hide form to disallow checkin
-$("form").hide();
+// When the page is loaded
+$(document).ready(function() {
+  
+  // Hide form to disallow checkin
+  $("form").hide();
 
-// Change message to show we're tracking their location
-$("p#message").html("Please enable location services");
+  // Change message to show we're tracking their location
+  $("p#message").html("Please enable location services");
 
-// Find the users location using geolocation
-watchUser = navigator.geolocation.watchPosition(success);
+  // Find the users location using geolocation
+  watchUser = navigator.geolocation.watchPosition(success);
+
+}); // End page is loaded
 
 // success is run when watchPosition is successful
 function success(position){
