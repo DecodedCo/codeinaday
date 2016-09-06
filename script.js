@@ -47,8 +47,8 @@ function success(position){
   var userLon = position.coords.longitude;
 
   // Where is the target location?
-  var targetLat = 0;
-  var targetLon = 0;
+  var targetLat = 40.7479095;
+  var targetLon = -73.9841027;
 
   // Calculate the distance
 
@@ -56,7 +56,7 @@ function success(position){
 
   // Define the radius for checkin
 
-  var radius = 0;
+  var radius = 0.2; // in miles
 
   // Logic
 
