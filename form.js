@@ -9,7 +9,9 @@ jQuery("form").submit(function() {
         // 5. What to do if data submits successfully:
         success: function(result){
             // 6. Change the paragraph with an id 'message' to display a welcome message
-            $("p#message").html("Hello there " + result.username + "! Number of checkins: " + result.checkIns);   
+            var paragraph = $("p#message");
+            var message = "Hello there " + result.username + "! Number of checkins: " + result.checkIns;
+            paragraph.html(message);   
             // 7. Hide the form now the user has checked in
             $("form").hide();
             // 8. Once they have checked in, stop watching their position
