@@ -1,7 +1,10 @@
 function success(position){
-
+  // Hide form to disallow checkin
+  $("form").hide();
+  
   // Change message to show we're tracking their location
-  $("p#message").html("Please enable location services");
+  $( "form" ).before( "<p id=\"message\">Tracking your location</p>" );
+  //$("p#message").html("Please enable location services");
 
   // Find the users location using geolocation
   watchUser = navigator.geolocation.watchPosition(success);
