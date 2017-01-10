@@ -2,7 +2,7 @@
 $(document).ready(function() {
  
  // Create call to action message
-  $("form").before( "<p id=\"message\"></p>" );
+  $("form").before('<p id="message"></p>');
  
   // 1. When someone submits a form:
   $("form").submit(function() {
