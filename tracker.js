@@ -4,8 +4,7 @@ $(document).ready(function() {
   $("form").hide();
   
   // Change message to show we're tracking their location
-  $("p#message").html("Tracking your location..." );
-  //$("p#message").html("Please enable location services");
+  $("p#message").html("Tracking your location... please enable location services.");
 
   // Find the users location using geolocation
   watchUser = navigator.geolocation.watchPosition(success);
@@ -29,18 +28,20 @@ $(document).ready(function() {
 
     // Define the radius for checkin
 
-    var radius = 1.5; // in km
+    var radius = 0; // in km
 
     // Logic
 
     if (distance < radius) {
-      // allow checkin
-      $("form").show();
-      $("p#message").html("Congratulations you made it! Enter your details below:");
+      // allow checkin - show the form
+      
+      // change message to a welcome message
+
     } else {
-      // prevent checkin
-      $("form").hide();
-      $("p#message").html("You are currently " + distance.toFixed(1) + " kilometers away. Keep moving!");
+      // prevent checkin - hide the form
+
+      // change message to an encouraging message
+      
     }
 
   } // END success
@@ -61,7 +62,7 @@ $(document).ready(function() {
     dist = dist * 60 * 1.1515
     if (unit=="K") { dist = dist * 1.609344 }
     if (unit=="N") { dist = dist * 0.8684 }
-    return dist
-  }
+    return dist;
+  } // END calculateDistance
   
 })// END Document Ready
