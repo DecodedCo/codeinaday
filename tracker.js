@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("form").hide();
   
   // Change message to show we're tracking their location
-  $( "form" ).before( "<p id=\"message\">Tracking your location</p>" );
+  $( "form" ).before( "<p id=\"message\">Tracking your location...</p>" );
   //$("p#message").html("Please enable location services");
 
 // Find the users location using geolocation
@@ -20,16 +20,16 @@ function success(position){
   var userLon = position.coords.longitude;
 
   // Where is the target location?
-  var targetLat = 40.7479095;
-  var targetLon = -73.9841027;
+  var targetLat = 0;
+  var targetLon = 0;
 
   // Calculate the distance
 
-  var distance = calculateDistance(userLat, userLon, targetLat, targetLon);
+  var distance = calculateDistance(userLat, userLon, targetLat, targetLon, "K");
 
   // Define the radius for checkin
 
-  var radius = 0.2; // in miles
+  var radius = 1.5; // in km
 
   // Logic
 
@@ -40,7 +40,7 @@ function success(position){
   } else {
     // prevent checkin
     $("form").hide();
-    $("p#message").html("You are currently " + distance.toFixed(1) + " miles away. Keep moving!");
+    $("p#message").html("You are currently " + distance.toFixed(1) + " kilometers away. Keep moving!");
   }
 
 } // END success
@@ -64,4 +64,4 @@ function calculateDistance(lat1, lon1, lat2, lon2, unit) {
   return dist
 }
   
-})
+})// END Document Ready
