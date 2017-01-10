@@ -1,4 +1,6 @@
-  // Hide form to disallow checkin
+$(document).ready(function() {  
+
+// Hide form to disallow checkin
   $("form").hide();
   
   // Change message to show we're tracking their location
@@ -61,3 +63,5 @@ function calculateDistance(lat1, lon1, lat2, lon2, unit) {
   if (unit=="N") { dist = dist * 0.8684 }
   return dist
 }
+  
+})
