@@ -1,7 +1,6 @@
 // When the page is loaded
 $(document).ready(function() {
  
-
   // 1. When someone submits a form:
   $("form").submit(function() {
       // 2. Perform an AJAX request ($ is a shortcut for jQuery):
