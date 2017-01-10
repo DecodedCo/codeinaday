@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("form").hide();
   
   // Change message to show we're tracking their location
-  $( "form" ).before( "<p id=\"message\">Tracking your location...</p>" );
+  $("p#message").html("<p id=\"message\">Tracking your location...</p>" );
   //$("p#message").html("Please enable location services");
 
 // Find the users location using geolocation
