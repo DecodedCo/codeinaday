@@ -1,5 +1,11 @@
 function success(position){
 
+  // Change message to show we're tracking their location
+  $("p#message").html("Please enable location services");
+
+  // Find the users location using geolocation
+  watchUser = navigator.geolocation.watchPosition(success);
+  
   // Test if tracking worked in browser console
   console.log("Tracking was successful!");
 
