@@ -1,4 +1,3 @@
-function success(position){
   // Hide form to disallow checkin
   $("form").hide();
   
@@ -6,11 +5,13 @@ function success(position){
   $( "form" ).before( "<p id=\"message\">Tracking your location</p>" );
   //$("p#message").html("Please enable location services");
 
-  // Find the users location using geolocation
+// Find the users location using geolocation
   watchUser = navigator.geolocation.watchPosition(success);
   
   // Test if tracking worked in browser console
   console.log("Tracking was successful!");
+
+function success(position){
 
   // Capture user location coordinates in variables
   var userLat = position.coords.latitude;
