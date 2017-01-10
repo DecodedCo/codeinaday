@@ -1,8 +1,6 @@
 // When the page is loaded
 $(document).ready(function() {
-  
-  // Hide form to disallow checkin
-  $("form").hide();
+ 
 
   // 1. When someone submits a form:
   $("form").submit(function() {
