@@ -34,14 +34,18 @@ $(document).ready(function() {
 
     if (distance < radius) {
       // allow checkin - show the form
-      
+      $("form").show();
+
       // change message to a welcome message
+      $("p#message").html("Congratulations!");
 
     } else {
       // prevent checkin - hide the form
+      $("form").hide();
 
       // change message to an encouraging message
-      
+      $("p#message").html("Get closer!");
+   
     }
 
   } // END success
