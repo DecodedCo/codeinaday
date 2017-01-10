@@ -7,7 +7,7 @@ $(document).ready(function() {
   $("p#message").html("<p id=\"message\">Tracking your location...</p>" );
   //$("p#message").html("Please enable location services");
 
-// Find the users location using geolocation
+  // Find the users location using geolocation
   watchUser = navigator.geolocation.watchPosition(success);
   
   // Test if tracking worked in browser console
