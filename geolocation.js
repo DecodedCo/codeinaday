@@ -2,7 +2,7 @@
 $("form").hide();
 
 // Change message
-$("p#message").html("Please allow tracking...");
+$("p#message").html("Please allow tracking");
 
 // Find the users location using geolocation
 watchUser = navigator.geolocation.watchPosition(success);
@@ -11,7 +11,7 @@ watchUser = navigator.geolocation.watchPosition(success);
 function success(position){
 
 	// Test if tracking worked in browser console
-	console.log("Tracking was successful!");
+	console.log("Tracking was successful");
 
 	// View position object in browser console
 	console.log(position);
@@ -25,7 +25,6 @@ function success(position){
   	var targetLon = 174.7656892;
 
 } // END success
-
 
 
 // Calculate Distance Function
