@@ -21,26 +21,29 @@ $("#nameform").submit(function(){
   username = $("#username").val();
   $("#nameform").hide();
   $("#sendform").show();
-  
+
   // save username to database
   database.ref('users/'+username.toLowerCase()).set({
     username: username,
     account: balance
   });
-  
+
   // change the message in the app
   $("p").html(username+", send and receive money from friends!");
   $("p").after("<h2>$"+balance+"</h2>");
-  
+
   // don't open a new window
   event.preventDefault();
-  
+
   // update my UI when my someone else sends me money changes
   database.ref('users/' + username).on('value', function(snapshot){
     //console.log(snapshot.val());
     var newBalance = snapshot.val().account;
     if(newBalance > balance){
       $("h2").html("$"+newBalance);
+      var change = newBalance - balance;
+      $("h2").after("<p id='alert' style='display: none;'>You received $"+change+"! :)</p>");
+      $("#alert").fadeIn().delay(1000).fadeOut();
       balance = newBalance;
     }
   });
@@ -61,14 +64,14 @@ $("#sendform").submit(function(){
   var user = $("#users").val();
   var amount = parseInt($("#amount").val());
   if(amount > 0 && balance >= amount){
-    
+
     // subtract money from my account
     var myBalance = balance - amount;
     database.ref('users/'+username.toLowerCase()).update({
       account: myBalance
     });
     $("h2").html("$"+myBalance);
-    
+
     // add money to their account
     var theirBalance;
     database.ref('users/'+user.toLowerCase()).once('value').then(function(snapshot) {
