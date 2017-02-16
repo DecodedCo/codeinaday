@@ -15,7 +15,7 @@ JavaScript file that connects to the Firebase database, registers a new user and
 
 Requires jQuery and Firebase libraries.
 
-#### jquery.min.js
+#### jQuery Library
 
 Include `jquery.min.js` from https://cdnjs.com/
 
@@ -23,7 +23,7 @@ Include `jquery.min.js` from https://cdnjs.com/
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 ```
 
-#### firebase.js
+#### Firebase Library
 
 Include `firebase.js` as described in the Firebase documentation: https://firebase.google.com/docs/web/setup 
 ```
