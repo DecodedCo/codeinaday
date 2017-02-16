@@ -5,6 +5,23 @@ This JavaScript library will add the functionality needed to send and receive fu
 
 ## JavaScript
 
-#### script.js
+#### direct-sdk.js
 
 JavaScript file that connects to the Firebase database, registers a new user and sends money.
+
+Requires jQuery and Firebase libraries.
+
+#### jquery.min.js
+
+Include `jquery.min.js`: https://cdnjs.com/
+
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+```
+
+#### firebase.js
+
+Include `firebase.js` as described in the Firebase documentation: https://firebase.google.com/docs/web/setup 
+```
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+```
