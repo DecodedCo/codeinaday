@@ -10,7 +10,7 @@ This JavaScript library will add the functionality needed to send and receive fu
 JavaScript file that connects to the Firebase database, registers a new user and sends money.
 
 ```
-<script src="https://assets.decoded.com/scripts/direct-sdk.js"></script>
+https://assets.decoded.com/scripts/direct-sdk.js
 ```
 
 Requires jQuery and Firebase libraries.
@@ -20,12 +20,12 @@ Requires jQuery and Firebase libraries.
 Include `jquery.min.js` from https://cdnjs.com/
 
 ```
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
 ```
 
 #### Firebase Library
 
 Include `firebase.js` as described in the Firebase documentation: https://firebase.google.com/docs/web/setup 
 ```
-<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+https://www.gstatic.com/firebasejs/3.6.9/firebase.js
 ```
