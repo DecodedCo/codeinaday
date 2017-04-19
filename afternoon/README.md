@@ -39,9 +39,9 @@ To track clicks of a button, open the following URL in a new tab:
 
 #### Add a URL destination
 
-Clicking on the link should direct the user to a new webpage. Once you have a URL destination in mind, URL encode that website at [https://www.urlencoder.org/] - this will convert the `://`, `?`, `&` and other special characters into URL-friendly codes like `%20` (that's a space).
+Clicking on the link should direct the user to a new webpage. Once you have a URL destination in mind, URL encode that website at https://www.urlencoder.org/ - this will convert the `:`, `/`, `?`, `&` and other special characters into URL-friendly codes like `%20` (that's a space).
 
-Now add the encoded URL to the end of the [track.decoded.com/link?] URL:
+Now add the encoded URL to the end of the https://track.decoded.com/link? URL:
 
 `url=[encoded URL]`
 
@@ -49,7 +49,7 @@ Now add the encoded URL to the end of the [track.decoded.com/link?] URL:
 
 You can also add any additional data you'd like to collect, e.g.
 
-`&campaign=[name of your campaign]` **(Required)**
+`&campaign=[name of your campaign]` (Required)
 
 `&author=[your name]`
 
