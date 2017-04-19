@@ -1,31 +1,20 @@
-Code in a Day Boilerplate
+B2B Email Code in a Day Boilerplate
 =========================
 
-This boilerplate helps attendees get started with their Code in a Day app. It includes the following files.
+This boilerplate helps attendees get started with their Code in a Day email. It includes the following files.
 
-## HTML
+## Morning
+
+#### template.html
+
+Boilerplate template to begin developing our email
 
 #### helper.html
 
-Boilerplate to optimise page for mobile web app experience
+Boilerplate to optimize email for mobile experience and various browser-specific issues
 
-## Images
+## Afternoon
 
-#### apple-touch-icon.png
+#### README.md
 
-An icon for the homescreen of your users' mobile devices
-
-
-## JavaScript
-
-#### form.js
-
-JavaScript file that processes a form input, and submits the result to the Decoded Checkin API without refreshing the page (uses jQuery's AJAX helper function)
-
-#### robot.js
-
-JavaScript file that creates an object with information about a robot
-
-## API Documentation
-
-For the API documentation, please see http://api.decoded.co
+Instructions for building in backend support to collect metrics on user interactions
