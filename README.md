@@ -7,7 +7,7 @@ This boilerplate helps attendees get started with their Code in a Day email. It 
 
 #### template.html
 
-Boilerplate template to begin developing our email
+Boilerplate template to begin developing an email
 
 #### helper.html
 
