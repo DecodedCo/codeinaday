@@ -45,11 +45,15 @@ Now add the encoded URL to the end of the [https://track.decoded.com/link?](http
 
 `url=[encoded URL]`
 
+#### Add a Campaign Name
+
+The backend needs a `campaign` name to return data, so add:
+
+`&campaign=[name of your campaign]`
+
 #### Collect More Data
 
 You can also add any additional data you'd like to collect, e.g.
-
-`&campaign=[name of your campaign]` (Required)
 
 `&author=[your name]`
 
