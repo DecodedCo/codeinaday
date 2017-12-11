@@ -28,4 +28,4 @@ JavaScript file that creates an object with information about a robot
 
 ## API Documentation
 
-For the API documentation, please see http://api.decoded.co
+For the API documentation, please see https://api.decoded.com/
